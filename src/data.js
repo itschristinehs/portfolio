@@ -54,15 +54,15 @@ export const lifeTabDefs = [
 
 export const publications = [
   { year: '2025', title: 'Anatomically-Focused Patches for Lightweight and Explainable Knee OA Grading', authors: 'Tzu-Tsen Hsieh*, Tien-En Chang*, Hervé Lombaert', venue: 'Under submission · IEEE Transactions on Biomedical Engineering (TBME)', links: [] },
-  { year: '2025', title: 'AS²: Accelerating Diffusion Models for Low-Level Vision Tasks via Approximation Shortcut and Adaptive Scheduling', authors: 'Yu-Shan Tai, Tzu-Tsen Hsieh, Hsi-Chun Cheng, Qian-Hui Chen, Co Yong, Dai-Jie Wu, An-Yeu Andy Wu, Shao-Hua Sun', venue: 'Submitted · ICML 2025', links: [] },
+  { year: '2025', title: 'AS²: Accelerating Diffusion Models for Low-Level Vision Tasks via Approximation Shortcut and Adaptive Scheduling', authors: 'Yu-Shan Tai, Tzu-Tsen Hsieh, Hsi-Chun Cheng, Qian-Hui Chen, Co Yong, Dai-Jie Wu, An-Yeu Andy Wu, Shao-Hua Sun', venue: 'Submitted · ICML 2025', links: 'https://drive.google.com/drive/folders/1inmY1PZEL7VagIr7JohdEK1dIPCD4cDf?usp=sharing' },
   { year: '2024', title: 'Bipartite Soft Matching for Vision Transformer Training-Free Token Pruning on Dense Tasks', authors: 'Tzu-Tsen Hsieh, Oscar Chew', venue: 'Research intern project · ASUS', links: [] },
-  { year: '2024', title: 'Low Frequency Vascular Analysis of Dual-mode Transcranial Brain Stimulation', authors: 'Tzu-Tsen Hsieh, Yung-Han Lee, Bao-Yu Hsieh, Hao-Li Liu', venue: 'Master’s thesis · 2024 IEEE UFFC · Oral presentation', links: [] },
+  { year: '2024', title: 'Low Frequency Vascular Analysis of Dual-mode Transcranial Brain Stimulation', authors: 'Tzu-Tsen Hsieh, Yung-Han Lee, Bao-Yu Hsieh, Hao-Li Liu', venue: 'Master’s thesis · 2024 IEEE UFFC · Oral presentation', links: 'https://epapers2.org/uffc2024/ESR/paper_details.php?paper_id=8224' },
 ];
 
 export const projects = [
-  { name: 'Feastforward', tag: 'Web · React · Spring Boot', desc: 'A platform to reduce food wastage by connecting surplus food with people who need it, built end-to-end with Scrum and DevOps practices.', href: '#' },
-  { name: 'Memohub', tag: 'Web · React · OpenAI API', desc: 'Capture, connect, contemplate — a platform for tracking thoughts and assisting personal introspection, with AI-generated prompts.', href: '#' },
-  { name: 'Yozicare', tag: 'Flutter · Mobile', desc: 'A mobile app supporting people with chronic kidney disease — CKD map, statistics, chatbot, and food composition analysis. Global Top 100, 2023 GDSC Solution Challenge.', href: '#' },
+  { name: 'Feastforward', tag: 'Web · React · Spring Boot', desc: 'A platform to reduce food wastage by connecting surplus food with people who need it, built end-to-end with Scrum and DevOps practices.', href: 'https://github.com/Wendell-Lin/SE2023Final' },
+  { name: 'Memohub', tag: 'Web · React · OpenAI API', desc: 'Capture, connect, contemplate — a platform for tracking thoughts and assisting personal introspection, with AI-generated prompts.', href: 'https://www.youtube.com/watch?v=EHVu34YO5D0' },
+  { name: 'Yozicare', tag: 'Flutter · Mobile', desc: 'A mobile app supporting people with chronic kidney disease — CKD map, statistics, chatbot, and food composition analysis. Global Top 100, 2023 GDSC Solution Challenge.', href: 'https://github.com/oscarchew/YoziCare' },
 ];
 
 export const films = [
