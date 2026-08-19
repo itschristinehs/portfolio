@@ -6,12 +6,13 @@ export default function About() {
       <div className="about-layout">
         <div className="about-copy">
           <p className="about-lead">
+            I recently knew a term "Renaissance man". I think this is the best fit of my current life.
             I started in computer vision and medical imaging — building models that could read a
             scan or make sense of a scene. That work pulled me toward a harder question: not just
             how machines perceive the world, but how they can act in it.
           </p>
           <p className="about-body">
-            These days I work on vision–language–action models and robotics. Outside research,
+            I'm mainly organizing NTU AI safety. These days I work on vision–language–action models and robotics. Outside research,
             I'm the same curious person: I love languages, make the occasional film, travel
             whenever I can, and think a lot about music, movies, and writing.
           </p>
@@ -21,7 +22,7 @@ export default function About() {
           </p>
         </div>
         <div className="portrait-box">
-          <span className="portrait-label">portrait — drop a photo</span>
+          <img src="profile.JPG" alt="Portrait" className="portrait-image" />
         </div>
       </div>
     </div>
