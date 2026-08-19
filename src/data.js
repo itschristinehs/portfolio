@@ -74,8 +74,25 @@ export const posts = [
   { date: 'Draft', title: 'What a vision–language–action model actually does', excerpt: 'An attempt to explain my research to a friend who isn’t in the field.', href: '#' },
 ];
 
-export const places = [
-  { name: 'Paris', note: 'French, cinema, long walks.' },
-  { name: 'Somewhere next', note: 'Hoping to live in Europe or the US.' },
-  { name: 'Add a place', note: 'Swap in your favorite trips.' },
+export const trips = [
+  { when: 'Aug 2026', where: 'Singapore', region: 'Asia', purposes: ['conference'], upcoming: true,
+    title: 'Singapore', subtitle: 'EAGxSingapore', desc: '', route: '', year: '2026', href: '#' },
+  { when: 'Jul 2026', where: 'South Korea', region: 'Asia', purposes: ['conference'], upcoming: false,
+    title: 'Seoul', subtitle: 'ICML 2026', desc: '', route: '', year: '2026', href: '#' },
+  { when: 'Jun 2026', where: 'France', region: 'Europe', purposes: ['travel'], upcoming: false,
+    title: 'Paris, Lyon & Dieppe', subtitle: 'Ten days across France', desc: '',
+    route: 'Paris (Jun 5–10) → Lyon (Jun 10–11) → Dieppe (Jun 13–14)', year: '2026', href: '#' },
+  { when: 'Oct 2025', where: 'USA', region: 'North America', purposes: ['travel'], upcoming: false,
+    title: 'New York & Boston', subtitle: '', desc: '', route: 'New York → Boston', year: '2025', href: '#' },
+  { when: 'Jun — Oct 2025', where: 'Montréal, Canada', region: 'North America', purposes: ['research'], upcoming: false,
+    title: 'Montréal', subtitle: 'Research internship', desc: '', route: '', year: '2025', href: '#' },
+  { when: 'Jan — Jun 2022', where: 'Linköping, Sweden', region: 'Europe', purposes: ['program'], upcoming: false,
+    title: 'Linköping', subtitle: 'Exchange semester', desc: '', route: '', year: '2022', href: '#' },
+];
+
+const uniq = (a) => [...new Set(a)];
+export const tripGroups = [
+  { key: 'year',    label: 'Year',    values: uniq(trips.map((t) => t.year)).sort().reverse() },
+  { key: 'region',  label: 'Region',  values: uniq(trips.map((t) => t.region)).sort() },
+  { key: 'purpose', label: 'Purpose', values: uniq(trips.flatMap((t) => t.purposes)).sort() },
 ];
