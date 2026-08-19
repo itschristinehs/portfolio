@@ -70,8 +70,8 @@ export const films = [
 ];
 
 export const posts = [
-  { date: 'Coming soon', title: 'Why I finally made a personal site', excerpt: 'A short note on writing more, and thinking in public.', href: '#' },
-  { date: 'Draft', title: 'What a vision–language–action model actually does', excerpt: 'An attempt to explain my research to a friend who isn’t in the field.', href: '#' },
+  { date: 'Coming soon', title: 'I should start, now!', excerpt: 'A short note on writing more, and thinking in public.', href: '#' },
+  { date: 'Draft', title: 'Why do I start AI Safety?', excerpt: 'An record of how and why I start engaging in AI safety.', href: '#' },
 ];
 
 export const trips = [
