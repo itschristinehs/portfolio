@@ -3,7 +3,10 @@ import { lifeTabDefs, films, posts, places } from '../data';
 
 export default function Life() {
   const [tab, setTab] = useState('film');
-
+  const films = [
+    { yt: 'ydMNk5UsWwU', title: 'My First personal video', role: 'Directed', year: '2025', desc: '...' },
+  ];
+  const [playing, setPlaying] = useState(null);
   return (
     <div className="page page-inset life-page">
       <div className="eyebrow">Life</div>
@@ -23,20 +26,32 @@ export default function Life() {
       </div>
 
       {tab === 'film' && (
-        <div>
+        <div className="film-grid">
           {films.map((film, i) => (
-            <a key={i} href={film.href} className="film-card">
+            <div key={i} className="film-card">
               <div className="film-thumb">
-                <span className="film-play">▶</span>
+                {playing === i ? (
+                  <iframe
+                    src={`https://www.youtube-nocookie.com/embed/${film.yt}?rel=0&autoplay=1`}
+                    title={film.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"
+                    allowFullScreen
+                  />
+                ) : (
+                  <button
+                    className="film-thumb-btn"
+                    onClick={() => setPlaying(i)}
+                    style={{ backgroundImage: `url(https://i.ytimg.com/vi/${film.yt}/hqdefault.jpg)` }}
+                  >
+                    <span className="film-play">▶</span>
+                  </button>
+                )}
               </div>
               <div className="film-head">
                 <div className="film-title">{film.title}</div>
-                <div className="film-meta">
-                  {film.role} · {film.year}
-                </div>
+                <div className="film-meta">{film.role} · {film.year}</div>
               </div>
-              <div className="film-desc">{film.desc}</div>
-            </a>
+            </div>
           ))}
         </div>
       )}
